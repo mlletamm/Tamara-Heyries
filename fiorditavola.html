@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4ce619",
+                        "gold": "#D4AF37",
+                        "sage": "#7A9473",
+                        "blush": "#E8D7D0",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0B1208",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .serif-font { font-family: 'Playfair Display', serif; }
+        body { min-height: 100dvh; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 justify-between border-b border-primary/10">
+            <span class="material-symbols-outlined text-primary">menu</span>
+            <h1 class="serif-font text-xl font-bold tracking-widest uppercase text-slate-900 dark:text-slate-100 text-center flex-1">
+                Fior <span class="text-primary italic text-sm lowercase">di</span> Tavola
+            </h1>
+            <span class="material-symbols-outlined text-primary">shopping_bag</span>
+        </header>
+
+        <section class="relative h-[70vh] w-full bg-slate-800 flex items-end p-6 pb-12">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-60"></div>
+            <div class="relative z-10">
+                <h2 class="serif-font text-4xl text-white mb-6 leading-tight">From Petal <br/>to Plate</h2>
+                <div class="flex flex-col gap-3">
+                    <button class="bg-primary text-background-dark font-bold py-4 rounded-full text-sm uppercase tracking-widest">Reserve a Table</button>
+                    <a href="menu.html" class="text-center bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold py-4 rounded-full text-sm uppercase tracking-widest">Discover Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 py-16 text-center">
+            <span class="text-primary text-xs font-bold uppercase tracking-[0.3em] mb-4 block">The Philosophy</span>
+            <h2 class="serif-font text-3xl mb-6">Our Concept</h2>
+            <p class="serif-font italic text-lg leading-relaxed text-slate-600 dark:text-slate-400 max-w-md mx-auto">
+                "Nestled in the heart of Florence, we curate a multisensory journey where high gastronomy meets the delicate art of floristry."
+            </p>
+        </section>
+
+        <section class="px-6 py-16 bg-white dark:bg-slate-900/10">
+            <h3 class="serif-font text-2xl mb-8 text-center">Visit Us</h3>
+            <div class="text-center">
+                <p class="font-bold">Via dei Fiori, 12</p>
+                <p class="text-slate-500 text-sm">50123 Firenze FI, Italy</p>
+            </div>
+        </section>
+
+        <nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/10 px-6 py-3 pb-8 z-50">
+            <div class="flex items-center justify-between max-w-md mx-auto">
+                <a class="flex flex-col items-center gap-1 text-primary" href="index.html">
+                    <span class="material-symbols-outlined fill-1">home</span>
+                    <span class="text-[10px] font-bold uppercase">Home</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-slate-400" href="menu.html">
+                    <span class="material-symbols-outlined">restaurant_menu</span>
+                    <span class="text-[10px] font-bold uppercase">Menu</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-slate-400" href="boutique.html">
+                    <span class="material-symbols-outlined">local_florist</span>
+                    <span class="text-[10px] font-bold uppercase">Boutique</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
