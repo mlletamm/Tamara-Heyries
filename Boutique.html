@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#4ce619", "background-light": "#f6f8f6", "background-dark": "#0B1208" }, fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"], "serif": ["Playfair Display", "serif"] } } } }</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex min-h-screen flex-col">
+        <header class="p-4 border-b border-primary/10 text-center">
+            <h1 class="serif-font font-bold uppercase tracking-widest">Botanical Boutique</h1>
+        </header>
+
+        <section class="p-6 grid grid-cols-2 gap-4">
+            <div class="flex flex-col gap-2">
+                <div class="aspect-square bg-sage/20 rounded-xl overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&q=80" class="w-full h-full object-cover mix-blend-overlay">
+                </div>
+                <h3 class="font-bold text-sm">Florentine Bouquet</h3>
+                <p class="text-xs text-primary">€45.00</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="aspect-square bg-blush/20 rounded-xl overflow-hidden">
+                     <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&q=80" class="w-full h-full object-cover mix-blend-overlay">
+                </div>
+                <h3 class="font-bold text-sm">Rose & Tea Mist</h3>
+                <p class="text-xs text-primary">€28.00</p>
+            </div>
+        </section>
+
+        <section class="p-6 mt-4 bg-primary/5 mx-6 rounded-2xl text-center">
+            <span class="material-symbols-outlined text-primary mb-2">eco</span>
+            <h4 class="serif-font mb-2">Sustainability Commitment</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Zero-waste packaging & local farm partnerships for every bloom.</p>
+        </section>
+
+        <div class="h-24"></div>
+        <nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/10 px-6 py-3 pb-8 z-50">
+            <div class="flex items-center justify-between max-w-md mx-auto">
+                <a class="flex flex-col items-center gap-1 text-slate-400" href="index.html"><span class="material-symbols-outlined">home</span><span class="text-[10px] font-bold uppercase">Home</span></a>
+                <a class="flex flex-col items-center gap-1 text-slate-400" href="menu.html"><span class="material-symbols-outlined">restaurant_menu</span><span class="text-[10px] font-bold uppercase">Menu</span></a>
+                <a class="flex flex-col items-center gap-1 text-primary" href="boutique.html"><span class="material-symbols-outlined fill-1">local_florist</span><span class="text-[10px] font-bold uppercase">Boutique</span></a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
