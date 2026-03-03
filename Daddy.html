@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#4ce619", "background-light": "#f6f8f6", "background-dark": "#0B1208" }, fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"], "serif": ["Playfair Display", "serif"] } } } }</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <div class="relative flex min-h-screen flex-col">
+        <header class="p-4 border-b border-primary/10 flex justify-between">
+            <a href="index.html"><span class="material-symbols-outlined text-primary">arrow_back</span></a>
+            <h1 class="serif-font font-bold uppercase tracking-widest">The Menu</h1>
+            <div class="w-6"></div>
+        </header>
+
+        <section class="p-6">
+            <div class="mb-12">
+                <h2 class="serif-font text-2xl text-primary mb-4 border-b border-primary/20 pb-2">Antipasti</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-baseline"><h3 class="font-bold">Burrata & Basil Blossoms</h3><span class="text-gold">€18</span></div>
+                        <p class="text-sm text-slate-500">Fresh burrata, citrus petals, and micro-herbs.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline"><h3 class="font-bold">Garden Pansy Salad</h3><span class="text-gold">€16</span></div>
+                        <p class="text-sm text-slate-500">Mint, elderflower vinaigrette, and wild greens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-12">
+                <h2 class="serif-font text-2xl text-primary mb-4 border-b border-primary/20 pb-2">Primi & Secondi</h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-baseline"><h3 class="font-bold">Lavender Essence Risotto</h3><span class="text-gold">€24</span></div>
+                        <p class="text-sm text-slate-500">Slow-cooked arborio with subtle lavender notes.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline"><h3 class="font-bold">Herb-Crusted Branzino</h3><span class="text-gold">€32</span></div>
+                        <p class="text-sm text-slate-500">Orange blossom glaze and rosemary flowers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="h-24"></div>
+        <nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-primary/10 px-6 py-3 pb-8 z-50">
+            <div class="flex items-center justify-between max-w-md mx-auto">
+                <a class="flex flex-col items-center gap-1 text-slate-400" href="index.html"><span class="material-symbols-outlined">home</span><span class="text-[10px] font-bold uppercase">Home</span></a>
+                <a class="flex flex-col items-center gap-1 text-primary" href="menu.html"><span class="material-symbols-outlined fill-1">restaurant_menu</span><span class="text-[10px] font-bold uppercase">Menu</span></a>
+                <a class="flex flex-col items-center gap-1 text-slate-400" href="boutique.html"><span class="material-symbols-outlined">local_florist</span><span class="text-[10px] font-bold uppercase">Boutique</span></a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
